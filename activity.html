@@ -1,0 +1,130 @@
+<!-- Caleb Rodriguez - Balance & Activity page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Budget - Activity</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Texas Tech Student Budget home">
+      <img class="brand-logo" src="images/tt-logo.png" alt="Texas Tech double T logo" width="32" height="32">
+      <span class="brand-text">
+        <span class="brand-name">TEXAS TECH</span>
+        <span class="brand-sub">Student Budget</span>
+      </span>
+    </a>
+    <a class="profile-link" href="profile.html" aria-label="Open your profile">
+      <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="9.5" r="3.5"/>
+        <path d="M5 19c1.5-3 4-4.5 7-4.5s5.500 1.500 7 4.500"/>
+      </svg>
+    </a>
+  </header>
+
+  <main class="page">
+    <h1 class="page-title">Balance &amp; Activity</h1>
+
+    <section class="balance-card" aria-label="Account balances">
+      <p class="balance-total">$1,250.00</p>
+      <div class="balance-split">
+        <div class="balance-item">
+          <span class="balance-label">Available Balance</span>
+          <span class="balance-amount">$920.50</span>
+        </div>
+        <div class="balance-item balance-item-right">
+          <span class="balance-label">Meal Balance</span>
+          <span class="balance-amount">$185.40</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Filter and search transactions">
+      <div class="filters" role="group" aria-label="Filter by category">
+        <button class="filter-btn active" type="button" aria-pressed="true">All</button>
+        <button class="filter-btn" type="button" aria-pressed="false">Food</button>
+        <button class="filter-btn" type="button" aria-pressed="false">School</button>
+        <button class="filter-btn" type="button" aria-pressed="false">Shopping</button>
+        <button class="filter-btn" type="button" aria-pressed="false">Other</button>
+      </div>
+
+      <div class="sort-search">
+        <label class="visually-hidden" for="search">Search transactions</label>
+        <input class="search-input" id="search" type="search" placeholder="Search transaction...">
+        <label class="visually-hidden" for="sort">Sort transactions</label>
+        <select class="sort-select" id="sort">
+          <option>Newest first</option>
+          <option>Oldest first</option>
+          <option>Amount: high to low</option>
+          <option>Amount: low to high</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="activity" aria-label="Transactions">
+      <ul class="activity-grid">
+        <li class="activity-card">
+          <h2 class="card-title">Chick-fil-A</h2>
+          <p class="card-meta"><span class="tag tag-food">Food</span> <time datetime="2026-10-08">Oct 8</time></p>
+          <p class="card-amount">-$10.50</p>
+          <span class="status status-posted">Posted</span>
+          <button class="btn-view" type="button">View</button>
+        </li>
+        <li class="activity-card">
+          <h2 class="card-title">Student Union</h2>
+          <p class="card-meta"><span class="tag tag-food">Food</span> <time datetime="2026-10-01">Oct 1</time></p>
+          <p class="card-amount">-$8.50</p>
+          <span class="status status-posted">Posted</span>
+          <button class="btn-view" type="button">View</button>
+        </li>
+        <li class="activity-card">
+          <h2 class="card-title">Starbucks</h2>
+          <p class="card-meta"><span class="tag tag-food">Food</span> <time datetime="2026-09-21">Sep 21</time></p>
+          <p class="card-amount">-$7.75</p>
+          <span class="status status-posted">Posted</span>
+          <button class="btn-view" type="button">View</button>
+        </li>
+        <li class="activity-card">
+          <h2 class="card-title">Pizzahut</h2>
+          <p class="card-meta"><span class="tag tag-food">Food</span> <time datetime="2026-09-14">Sep 14</time></p>
+          <p class="card-amount">-$6.99</p>
+          <span class="status status-pending">Pending</span>
+          <button class="btn-view" type="button">View</button>
+        </li>
+        <li class="activity-card">
+          <h2 class="card-title">Cane's</h2>
+          <p class="card-meta"><span class="tag tag-food">Food</span> <time datetime="2026-08-26">Aug 26</time></p>
+          <p class="card-amount">-$6.80</p>
+          <span class="status status-posted">Posted</span>
+          <button class="btn-view" type="button">View</button>
+        </li>
+        <li class="activity-card">
+          <h2 class="card-title">Dutch Bros Coffee</h2>
+          <p class="card-meta"><span class="tag tag-food">Food</span> <time datetime="2026-08-10">Aug 10</time></p>
+          <p class="card-amount">-$8.85</p>
+          <span class="status status-posted">Posted</span>
+          <button class="btn-view" type="button">View</button>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html" aria-label="Home">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M12 3 2 12h3v8h5v-5h4v5h5v-8h3z"/></svg>
+      </a>
+      <a class="nav-link active" href="activity.html" aria-label="Activity" aria-current="page">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M7 8h10M7 12h10M7 16h10"/></svg>
+      </a>
+      <a class="nav-link" href="budget.html" aria-label="Budget">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v9h9"/></svg>
+      </a>
+    </nav>
+  </footer>
+
+</body>
+</html>
